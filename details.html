@@ -1,0 +1,13 @@
+{% extends "master.html" %}
+{% block title %}
+    Noodles - Member Details {{noodles.firstname}} 
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h1>{{noodles.firstname}}</h1>
+        <p>LastName: {{noodles.lastname}}</p>
+        <p>Phone: {{noodles.phone }}</p>
+        <p>BirthDay: {{noodles.date_of_birth}}</p>
+    </div>
+{% endblock %}
